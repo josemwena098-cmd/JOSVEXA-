@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#070707">
+<meta name="description" content="JOSVEXA CODEX - Extract public website source files.">
+<title>JOSVEXA CODEX</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+<a href="#" class="logo"><span class="logo-icon">&lt;/&gt;</span><span>JOSVEXA</span><small>CODEX</small></a>
+<div class="nav-status"><span class="status-dot"></span>SYSTEM ONLINE</div>
+</header>
 
+<main class="container">
+<section class="hero">
+<div class="hero-badge">PUBLIC WEB TOOL</div>
+<h1>Extract. <span>Explore.</span> Build.</h1>
+<p>Get publicly delivered website files, preview the source and download your project.</p>
+</section>
+
+<section class="tool-card">
+<div class="tool-top">
+<div><span class="mini-label">WEBSITE SOURCE</span><h2>Enter website URL</h2></div>
+<div class="tool-number">01</div>
+</div>
+
+<div class="url-box">
+<span class="url-icon">↗</span>
+<input type="url" id="url" placeholder="https://example.com" autocomplete="off">
+</div>
+
+<div class="buttons">
+<button id="scanBtn" class="scan-btn"><span>SCAN WEBSITE</span><b>→</b></button>
+<button id="clearBtn" class="clear-btn">CLEAR</button>
+</div>
+
+<div class="tool-note"><span>●</span>Only publicly delivered website resources can be inspected.</div>
+</section>
+
+<div id="error" class="error hidden"></div>
+
+<section id="result" class="results hidden">
+<div class="result-header">
+<div>
+<div class="success-label">✓ SCAN COMPLETE</div>
+<h2 id="siteTitle">Website</h2>
+<a id="siteUrl" target="_blank" rel="noopener"></a>
+</div>
+<button id="downloadBtn" class="download-btn">↓ DOWNLOAD ZIP</button>
+</div>
+
+<div class="code-area">
+<aside class="file-panel">
+<div class="file-title">PROJECT FILES</div>
+<div id="fileList"></div>
+</aside>
+<section class="viewer">
+<div class="viewer-header"><span id="fileName">Select a file</span><button id="copyBtn">COPY</button></div>
+<pre id="code">Select a file to view its source...</pre>
+</section>
+</div>
+</section>
+
+<section class="channel">
+<div class="channel-icon">◉</div>
+<div class="channel-content">
+<span class="channel-label">JOSVEXA COMMUNITY</span>
+<h2>Learn. Build. Create.</h2>
+<p>Follow our WhatsApp Channel for technology, coding, AI, web development and digital innovation.</p>
+</div>
+<a class="channel-btn" href="https://whatsapp.com/channel/0029VbE20aLKbYMSVlfmpr22" target="_blank" rel="noopener">JOIN CHANNEL <span>→</span></a>
+</section>
+</main>
+
+<footer>
+<div class="footer-logo">&lt;/&gt; JOSVEXA | TECHNOLOGY</div>
+<p>CODE • CREATE • INNOVATE • BUILD</p>
+<small>© 2026 JOSVEXA TECHNOLOGY</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
