@@ -1,0 +1,10 @@
+{
+  "name": "josvexa-codex",
+  "version": "3.0.0",
+  "private": true,
+  "description": "JOSVEXA CODEX - Public website source extractor",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0"
+  }
+}
